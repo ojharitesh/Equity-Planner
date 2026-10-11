@@ -1,6 +1,6 @@
-# Inclusive Test Planner
+# Equity Planner
 
-Inclusive Test Planner is a small Python command-line tool for software teams. It asks a few simple questions about a project and creates an `inclusive-test-plan.md` checklist with practical ideas for testing with people who have different abilities, languages, ages, backgrounds, and levels of technical experience.
+Equity Planner is a small Python command-line tool for software teams. It asks a few simple questions about a project and creates an `equity-test-plan.md` checklist with practical ideas for testing with people who have different abilities, languages, ages, backgrounds, and levels of technical experience.
 
 ## Why it matters
 
@@ -23,7 +23,7 @@ The tool uses only Python's standard library, so no package installation is requ
 Run the interactive planner:
 
 ```bash
-python3 inclusive_test_planner.py
+python3 equity_planner.py
 ```
 
 It asks:
@@ -35,10 +35,10 @@ It asks:
 
 These are suggestions, not a fixed menu. You can type a project type and user group that better match your project.
 
-The answers are saved to `inclusive-test-plan.md`. For a repeatable command, use non-interactive options:
+The answers are saved to `equity-test-plan.md`. For a repeatable command, use non-interactive options:
 
 ```bash
-python inclusive_test_planner.py --non-interactive \
+python equity_planner.py --non-interactive \
 	--project-type "student portal" \
 	--supports-multiple-languages \
 	--expected-users "students, families, and staff"
@@ -47,7 +47,7 @@ python inclusive_test_planner.py --non-interactive \
 Example output:
 
 ```text
-Success: created inclusive-test-plan.md with 8 testing suggestions.
+Success: created equity-test-plan.md with 8 testing suggestions.
 Review the checklist with people who bring perspectives different from your own.
 ```
 
@@ -56,9 +56,9 @@ The Markdown file includes checks for screen-reader users, keyboard-only users, 
 ## Project structure
 
 ```text
-inclusive_test_planner.py       # CLI, recommendation logic, and Markdown generation
-test_inclusive_test_planner.py  # Tests for recommendations and file output
-inclusive-test-plan.md          # Generated result; created after running the tool
+equity_planner.py               # CLI, recommendation logic, and Markdown generation
+test_equity_planner.py          # Tests for recommendations and file output
+equity-test-plan.md             # Generated result; created after running the tool
 README.md                       # Project documentation
 ```
 

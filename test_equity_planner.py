@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from inclusive_test_planner import (
+from equity_planner import (
     ProjectAnswers,
     build_markdown,
     main,

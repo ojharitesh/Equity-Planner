@@ -5,7 +5,7 @@ import dataclasses
 import pathlib
 
 
-DEFAULT_OUTPUT = "inclusive-test-plan.md"
+DEFAULT_OUTPUT = "equity-test-plan.md"
 
 
 @dataclasses.dataclass
@@ -94,7 +94,7 @@ def ask_yes_no(prompt: str, input_func=input) -> bool:
 
 def collect_answers(input_func=input) -> ProjectAnswers:
     """Collect project details from an interactive user."""
-    print("\nInclusive Test Planner")
+    print("\nEquity Planner")
     print("Answer a few questions to create a starting checklist.\n")
     project_type = input_func("What type of project is it? ").strip()
     while not project_type:
